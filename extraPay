@@ -1,0 +1,16 @@
+# Exercise 3: Write a program to prompt the user for hours and rate per hour to compute gross pay
+hours = input("How many hours did you work:") #50
+rp = input("What is your rate:") # 10
+
+if int(hours) > 40:
+    # 40 times rate, eg 40 * 10
+    pb = 40 * float(rp)
+    # hours inputted - 40, eg. 50 - 40 = 10
+    rm = (float(hours) - 40)
+    # rate / 0.5
+    extra = (float(rp) / 2) * float(1.5)
+    pay = float(extra) * float(rp)
+    print(float(pay) + float(pb))
+    print("yes")
+else:
+    print(float(hours) * float(rp))
